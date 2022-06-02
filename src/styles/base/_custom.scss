@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+// font-size 16px 미만일 때 사파리에서 해당 영역 자동 줌 일어나는 것 방지
+select,
+input,
+textarea {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
